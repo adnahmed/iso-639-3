@@ -3,7 +3,7 @@
  *
  * @type {Record<string, string>}
  */
-export const iso6393To2T = {
+const iso6393To2T = {
   aar: 'aar',
   abk: 'abk',
   ace: 'ace',
@@ -425,3 +425,5 @@ export const iso6393To2T = {
   zxx: 'zxx',
   zza: 'zza'
 }
+
+module.exports = {iso6393To2T}

@@ -9,14 +9,14 @@
  * @property {string | undefined} iso6391
  */
 
-import assert from 'node:assert/strict'
-import fs from 'node:fs'
-import path from 'node:path'
-import https from 'node:https'
-import concatStream from 'concat-stream'
-import yauzl from 'yauzl'
-import {tsvParse} from 'd3-dsv'
-import {bail} from 'bail'
+const assert = require('node:assert/strict')
+const fs = require('node:fs')
+const path = require('node:path')
+const https = require('node:https')
+const concatStream = require('concat-stream')
+const yauzl = require('yauzl')
+const {tsvParse} = require('d3-dsv')
+const {bail} = require('bail')
 
 /** @type {string[]} */
 const other = []

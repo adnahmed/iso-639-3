@@ -1,6 +1,6 @@
-import assert from 'node:assert/strict'
-import test from 'node:test'
-import {iso6393} from './index.js'
+const assert = require('node:assert/strict')
+const test = require('node:test')
+const {iso6393} = require('./index.js')
 
 test('iso6393', function () {
   assert.ok(Array.isArray(iso6393), 'should be an `array`')

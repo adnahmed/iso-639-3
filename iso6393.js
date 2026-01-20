@@ -58,7 +58,7 @@
  * @type {Array<Language>}
  */
 // @ts-expect-error
-export const iso6393 = [
+const iso6393 = [
   {
     name: 'Ghotuo',
     type: 'living',
@@ -48286,3 +48286,5 @@ export const iso6393 = [
     iso6393: 'zzj'
   }
 ]
+
+module.exports = {iso6393}

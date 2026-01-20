@@ -38,31 +38,31 @@ in particular.
 
 ## Install
 
-This package is [ESM only][esm].
+This package is CommonJS.
 In Node.js (version 14.14+, 16.0+), install with [npm][]:
 
 ```sh
 npm install iso-639-3
 ```
 
-In Deno with [`esm.sh`][esmsh]:
+Then require it:
 
 ```js
-import {iso6393} from 'https://esm.sh/iso-639-3@3'
+const {iso6393} = require('iso-639-3')
 ```
 
-In browsers with [`esm.sh`][esmsh]:
+When using ESM, import the default export and access its fields:
 
-```html
-<script type="module">
-  import {iso6393} from 'https://esm.sh/iso-639-3@3?bundle'
-</script>
+```js
+import iso from 'iso-639-3'
+
+const {iso6393} = iso
 ```
 
 ## Use
 
 ```js
-import {iso6393} from 'iso-639-3'
+const {iso6393} = require('iso-639-3')
 
 console.log(iso6393.slice(1820, 1830))
 ```
@@ -102,8 +102,7 @@ Yields:
 ## API
 
 This package exports the identifier `iso6393`, `iso6393To1`, `iso6393To2B`, and
-`iso6393To2T`.
-There is no default export.
+`iso6393To2T` from its CommonJS module object.
 
 ### `iso6393`
 
